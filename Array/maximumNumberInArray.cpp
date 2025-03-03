@@ -12,13 +12,19 @@ int main(){
 
     int maxNum = INT_MIN;  //INT_MIN is the smallest possible integer value (-2147483648 for 32-bit systems).
 
+     int minNum = INT_MAX;
+
     for(int i=0; i <= size-1; i++){
       if(arr[i]>maxNum){
         maxNum = arr[i];
       }
+      if(arr[i] < minNum){
+        minNum = arr[i];
+      }
     }
 
     cout<<"maximum number is in the array is "<<maxNum<<" ";
+     cout<<"mini number is in the array is "<<minNum<<" ";
     
 }
 
